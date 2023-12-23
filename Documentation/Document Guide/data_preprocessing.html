@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Data_preprocessing package &mdash; Environmental Sensors Analysis and Forecasting 1.0.0 documentation</title>
+
+
+
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="load_data package" href="load_data.html" />
+    <link rel="prev" title="ESA_Ineuron" href="modules.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+            <div class="wy-side-scroll">
+                <div class="wy-side-nav-search">
+
+
+
+                    <a href="index.html" class="icon icon-home"> Environmental Sensors Analysis and Forecasting
+          
+
+          
+          </a>
+
+
+
+
+
+
+
+                    <div role="search">
+                        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+                            <input type="text" name="q" placeholder="Search docs" />
+                            <input type="hidden" name="check_keywords" value="yes" />
+                            <input type="hidden" name="area" value="default" />
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+
+
+
+
+                    <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+                    <ul class="current">
+                        <li class="toctree-l1 current"><a class="reference internal" href="modules.html">ESA_Ineuron</a>
+                            <ul class="current">
+                                <li class="toctree-l2 current"><a class="current reference internal" href="#">Data_preprocessing package</a>
+                                    <ul>
+                                        <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+                                        <li class="toctree-l3"><a class="reference internal" href="#module-data_preprocessing.data_preprocessing">data_preprocessing.data_preprocessing module</a></li>
+                                        <li class="toctree-l3"><a class="reference internal" href="#module-data_preprocessing">Module contents</a></li>
+                                    </ul>
+                                </li>
+                                <li class="toctree-l2"><a class="reference internal" href="load_data.html">load_data package</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="model_training.html">model_training package</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+            <nav class="wy-nav-top" aria-label="top navigation">
+
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="index.html">Environmental Sensors Analysis and Forecasting</a>
+
+            </nav>
+
+
+            <div class="wy-nav-content">
+
+                <div class="rst-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div role="navigation" aria-label="breadcrumbs navigation">
+
+                        <ul class="wy-breadcrumbs">
+
+                            <li>
+                                <a href="index.html" class="icon icon-home"></a> &raquo;</li>
+
+                            <li><a href="modules.html">ESA_Ineuron</a> &raquo;</li>
+
+                            <li>Data_preprocessing package</li>
+
+
+                            <li class="wy-breadcrumbs-aside">
+
+
+                                <a href="_sources/data_preprocessing.rst.txt" rel="nofollow"> View page source</a>
+
+
+                            </li>
+
+                        </ul>
+
+
+                        <hr/>
+                    </div>
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        <div itemprop="articleBody">
+
+                            <div class="section" id="data-preprocessing-package">
+                                <h1>Data_Preprocessing Package<a class="headerlink" href="#data-preprocessing-package" title="Permalink to this headline">¶</a></h1>
+                                <div class="section" id="submodules">
+                                    <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+                                </div>
+                                <div class="section" id="module-data_preprocessing.data_preprocessing">
+                                    <span id="data-preprocessing-data-preprocessing-module"></span>
+                                    <h2>data_preprocessing.data_preprocessing module<a class="headerlink" href="#module-data_preprocessing.data_preprocessing" title="Permalink to this headline">¶</a></h2>
+                                    <dl class="py class">
+                                        <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">data_preprocessing.data_preprocessing.</span></span><span class="sig-name descname"><span class="pre">DataPreprocessing</span></span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing" title="Permalink to this definition">¶</a></dt>
+                                        <dd>
+                                            <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                            <p><b>Name :</b> Data Preprocessing Class<br> <b>Module</b> : data_preprocessing <br> <b>Description</b> : This class is to preprocess the data from the sensors and make it fit for training.</p>
+                                            <blockquote>
+                                                <div>
+                                                    <p></p>
+                                                </div>
+                                            </blockquote>
+                                            <p>Written By : Jai Singh<br> Version : 1.0.0 <br>Revision : None</p>
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.drop_column">
+<span class="sig-name descname"><span class="pre">drop_column</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.drop_column" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : drop_column<br> <b>Module</b> : data_preprocessing<br> <b>Description</b> : This method drops unnamed columns from dataset which is created while merging the dataset for resampling.
+                                                        <dl class="simple">
+                                                            <dt>Parameters:</dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>None</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                            <dt>Returns : </dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>df : type(Boolean Value)</p>
+                                                                    </li>
+
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <p>Written By :Jai Singh<br> Version : 1.0.0<br> Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.get_data">
+<span class="sig-name descname"><span class="pre">get_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.get_data" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : get_data function<br> <b>Module</b> : data_preprocessing<br> <b>Description</b> : Fetch data from Data/RawDataset folder<br> </p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns : Data of csv</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : type(pandas dataframe)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>on failure : Raise Exceptions</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By :  Jai Singh<br> Version : 1.0.0<br> Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.isnull_present">
+<span class="sig-name descname"><span class="pre">isnull_present</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.isnull_present" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : isnull_present <br><b>Module</b>: data_preprocessing <br><b>Description</b> : This method checks whether there are null values present in the pandas Dataframe or not.
+                                                        <dl class="simple">
+                                                            <dt>Parameters:</dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>data : pandas Dataframe</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                            <dt>Returns :</dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>Boolean value</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>on failure : Raise Exceptions</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+
+                                                        <p>Written By :  Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.resample_data">
+<span class="sig-name descname"><span class="pre">resample_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.resample_data" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : resample_data <br><b>Module</b> : data_preprocessing<br> <b>Description</b> : This method resample the data by minutes for model training</p>
+
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : type(pandas dataframe)</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>resample_df : type(pandas dataframe)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>on failure : Raise Exceptions</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.run_preprocessing">
+<span class="sig-name descname"><span class="pre">run_preprocessing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.run_preprocessing" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : run_preprocessing<br> <b>Module</b> : data_preprocessing <br> <b>Description</b> : This method will run all methods present in this module and create csv files according to sensor data
+                                                        <dl class="simple">
+                                                            <dt>Parameters:</dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>None</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                            <dt>Returns :</dt>
+                                                            <dd>
+                                                                <ul class="simple">
+                                                                    <li>
+                                                                        <p>preprocessed csv file for all sensors</p>
+                                                                    </li>
+                                                                    <li>
+                                                                        <p>on failure : Raise Exceptions</p>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                        <p>Written By :  Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="data_preprocessing.data_preprocessing.DataPreprocessing.to_datetime">
+<span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#data_preprocessing.data_preprocessing.DataPreprocessing.to_datetime" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : to_datetime <br><b>Module</b> : data_preprocessing<br> <b>Description</b> : This method will convert a timestamp column in Date time format and set it as index</p>
+
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : type(pandas dataframe)</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : type(pandas dataframe)</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>on failure : Raise Exceptions</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By :  Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="section" id="module-data_preprocessing">
+                                    <span id="module-contents"></span>
+                                    <h2>Module contents<a class="headerlink" href="#module-data_preprocessing" title="Permalink to this headline">¶</a></h2>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <footer>
+                        <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+                            <a href="load_data.html" class="btn btn-neutral float-right" title="load_data package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+                            <a href="modules.html" class="btn btn-neutral float-left" title="ESA_Ineuron" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+                        </div>
+
+                        <hr/>
+
+                        <div role="contentinfo">
+                            <p>
+                                &#169; Copyright 2021, Ineuron.
+
+                            </p>
+                        </div>
+
+
+
+                        Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+
+                        <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script type="text/javascript">
+        jQuery(function() {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

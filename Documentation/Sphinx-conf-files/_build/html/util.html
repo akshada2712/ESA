@@ -1,0 +1,331 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>util package &mdash; Environmental Sensors Analysis and Forecasting 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Environmental Sensors Analysis and Forecasting
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">ESA_Ineuron</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Environmental Sensors Analysis and Forecasting</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>util package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/util.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="util-package">
+<h1>util package<a class="headerlink" href="#util-package" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="module-util.app_logger">
+<span id="util-app-logger-module"></span><h2>util.app_logger module<a class="headerlink" href="#module-util.app_logger" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.app_logger.AppLogger">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">util.app_logger.</span></span><span class="sig-name descname"><span class="pre">AppLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">moduleName</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#util.app_logger.AppLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Name: AppLogger Class
+Module : util
+Description: This class is used for logging functionality
+Written By: Jai Singh
+Version: 1.0
+Revisions: None</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="util.app_logger.AppLogger.set_handlers">
+<span class="sig-name descname"><span class="pre">set_handlers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#util.app_logger.AppLogger.set_handlers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name: set_handlers functions
+Description: This function is used for setting the
+configuration of logs, set format of logging message.
+Parameters : None
+Returns :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>logger : type(Logger Object)</p></li>
+</ul>
+</div></blockquote>
+<p>Written By: Jai Singh
+Version: 1.0
+Revisions: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-util.get_past_current_date">
+<span id="util-get-past-current-date-module"></span><h2>util.get_past_current_date module<a class="headerlink" href="#module-util.get_past_current_date" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.get_past_current_date.Date">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">util.get_past_current_date.</span></span><span class="sig-name descname"><span class="pre">Date</span></span><a class="headerlink" href="#util.get_past_current_date.Date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Name: Date Class
+Module : util
+Description: This class is used to get current day date
+and previous day date.
+Written By: Jai Singh
+Version: 1.0
+Revisions: None</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="util.get_past_current_date.Date.past_date">
+<span class="sig-name descname"><span class="pre">past_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#util.get_past_current_date.Date.past_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name: today_date function
+Module : util
+Description: This function is used to get previous day date.
+Parameters : None
+Returns : Previous Date</p>
+<blockquote>
+<div><p>-previous_date : type(date)</p>
+</div></blockquote>
+<p>On Failure: None
+Written By: Jai Singh
+Version: 1.0
+Revisions: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="util.get_past_current_date.Date.today_date">
+<span class="sig-name descname"><span class="pre">today_date</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#util.get_past_current_date.Date.today_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name: today_date function
+Module : util
+Description: This function is used to get current day date.
+Parameters : None
+Returns : Todays Date</p>
+<blockquote>
+<div><p>-todays_date : type(date)</p>
+</div></blockquote>
+<p>On Failure: None
+Written By: Jai Singh
+Version: 1.0
+Revisions: None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-util.root">
+<span id="util-root-module"></span><h2>util.root module<a class="headerlink" href="#module-util.root" title="Permalink to this headline">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="util.root.ProjectRoot">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">util.root.</span></span><span class="sig-name descname"><span class="pre">ProjectRoot</span></span><a class="headerlink" href="#util.root.ProjectRoot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Name : ProjectRoot Class
+Module : util
+Description : This class is to run give the current project root</p>
+<blockquote>
+<div><p>directory.</p>
+</div></blockquote>
+<p>Written By : Jai Singh
+Version : 1.0.0
+Revision : None</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="util.root.ProjectRoot.get_project_root">
+<span class="sig-name descname"><span class="pre">get_project_root</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">pathlib.Path</span></span></span><a class="headerlink" href="#util.root.ProjectRoot.get_project_root" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name : get_project_root Class
+Module : util
+Description : Return the path of the project
+Parameters: None
+Returns :</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>root : Return the path of the project</p></li>
+</ul>
+</div></blockquote>
+<p>Written By : Jai Singh
+Version : 1.0.0
+Revision : None</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-util">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-util" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Ineuron.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+
+<html class="writer-html5" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Model Training package &mdash; Environmental Sensors Analysis and Forecasting 1.0.0 documentation</title>
+
+
+
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+
+
+
+
+
+
+
+
+
+    <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+
+
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="main module" href="main.html" />
+</head>
+
+<body class="wy-body-for-nav">
+
+
+    <div class="wy-grid-for-nav">
+
+        <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+            <div class="wy-side-scroll">
+                <div class="wy-side-nav-search">
+
+
+
+                    <a href="index.html" class="icon icon-home"> Environmental Sensors Analysis and Forecasting
+          
+
+          
+          </a>
+
+
+
+
+
+
+
+                    <div role="search">
+                        <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+                            <input type="text" name="q" placeholder="Search docs" />
+                            <input type="hidden" name="check_keywords" value="yes" />
+                            <input type="hidden" name="area" value="default" />
+                        </form>
+                    </div>
+
+
+                </div>
+
+
+                <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+
+
+
+
+
+
+                    <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+                    <ul class="current">
+                        <li class="toctree-l1 current"><a class="reference internal" href="modules.html">ESA_Ineuron</a>
+                            <ul class="current">
+                                <li class="toctree-l2"><a class="reference internal" href="data_preprocessing.html">Data Preprocessing Package</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="load_data.html">Load Data package</a></li>
+                                <li class="toctree-l2"><a class="reference internal" href="main.html">main module</a></li>
+                                <li class="toctree-l2 current"><a class="current reference internal" href="#">Model Training Package</a>
+                                    <ul>
+                                        <li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+                                        <li class="toctree-l3"><a class="reference internal" href="#module-model_training.run_train">run_train module</a></li>
+                                        <li class="toctree-l3"><a class="reference internal" href="#module-model_training.train">train module</a></li>
+                                        <li class="toctree-l3"><a class="reference internal" href="#module-model_training">Module contents</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </nav>
+
+        <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+
+            <nav class="wy-nav-top" aria-label="top navigation">
+
+                <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+                <a href="index.html">Environmental Sensors Analysis and Forecasting</a>
+
+            </nav>
+
+
+            <div class="wy-nav-content">
+
+                <div class="rst-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div role="navigation" aria-label="breadcrumbs navigation">
+
+                        <ul class="wy-breadcrumbs">
+
+                            <li>
+                                <a href="index.html" class="icon icon-home"></a> &raquo;</li>
+
+                            <li><a href="modules.html">ESA_Ineuron</a> &raquo;</li>
+
+                            <li>Model Training package</li>
+
+
+                            <li class="wy-breadcrumbs-aside">
+
+
+                                <a href="_sources/model_training.rst.txt" rel="nofollow"> View page source</a>
+
+
+                            </li>
+
+                        </ul>
+
+
+                        <hr/>
+                    </div>
+                    <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+                        <div itemprop="articleBody">
+
+                            <div class="section" id="model-training-package">
+                                <h1>Model_training package<a class="headerlink" href="#model-training-package" title="Permalink to this headline">¶</a></h1>
+                                <div class="section" id="submodules">
+                                    <h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+                                </div>
+                                <div class="section" id="module-model_training.run_train">
+                                    <span id="model-training-run-train-module"></span>
+                                    <h2>model_training.Run_train module<a class="headerlink" href="#module-model_training.run_train" title="Permalink to this headline">¶</a></h2>
+                                    <dl class="py class">
+                                        <dt class="sig sig-object py" id="model_training.run_train.RunTraining">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">model_training.run_train.</span></span><span class="sig-name descname"><span class="pre">RunTraining</span></span><a class="headerlink" href="#model_training.run_train.RunTraining" title="Permalink to this definition">¶</a></dt>
+                                        <dd>
+                                            <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                            <p><b>Name : </b> RunTraining Class
+                                                <br>
+                                                <b>Module : </b>model_training <br>
+                                                <b>Description : </b>This class is to run the training process and its utilise train class.</p>
+                                            <blockquote>
+                                                <div>
+                                                    <p></p>
+                                                </div>
+                                            </blockquote>
+                                            <p>Written By : Jai Singh <br> Version : 1.0.0 <br> Revision : None</p>
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.run_train.RunTraining.combine_csv">
+<span class="sig-name descname"><span class="pre">combine_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_training.run_train.RunTraining.combine_csv" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : combine_csv function <br><b>Module</b> : model_training<br> <b>Description</b> : Combines all the raw csv in a single csv for preprocessing and send the previous day combined csv in archive
+                                                        folder
+                                                    </p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.run_train.RunTraining.run_training">
+<span class="sig-name descname"><span class="pre">run_training</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_training.run_train.RunTraining.run_training" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : run_training function <br><b>Module</b> : model_training <br><b>Description</b> : This function does the following tasks:</p>
+                                                    <blockquote>
+                                                        <div>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>Create Forecast Data Folder</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Train and Save Model</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Save Forecast Data, Accuracy Metrics, Plots</p>
+                                                                </li>
+                                                                <li>
+                                                                    <p>Archive the previous models</p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </blockquote>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                                <li>On Failure : Raise Exception</li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By :  Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                        </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="section" id="module-model_training.train">
+                                    <span id="model-training-train-module"></span>
+                                    <h2>model_training.train module<a class="headerlink" href="#module-model_training.train" title="Permalink to this headline">¶</a></h2>
+                                    <dl class="py class">
+                                        <dt class="sig sig-object py" id="model_training.train.ModelTraining">
+<em class="property"><span class="pre">class</span> </em><span class="sig-prename descclassname"><span class="pre">model_training.train.</span></span><span class="sig-name descname"><span class="pre">ModelTraining</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining" title="Permalink to this definition">¶</a></dt>
+                                        <dd>
+                                            <p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+                                            <p><b>Name</b> : ModelTraining Class <br><b>Module</b> : model_training <br><b>Description</b> : This class does following tasks :</p>
+                                            <blockquote>
+                                                <div>
+                                                    <ul class="simple">
+                                                        <li>
+                                                            <p>create model</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>save model</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>forecast future data</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>save future plots</p>
+                                                        </li>
+                                                        <li>
+                                                            <p>save models</p>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </blockquote>
+                                            <p>Written By :Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.accuracy_metrics">
+<span class="sig-name descname"><span class="pre">accuracy_metrics</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">freq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">actual_df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.accuracy_metrics" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : accuracy_metrics function <br><b>Module</b> : model_training <br><b>Description</b> : This function gives accuracy metrics which involves MAPE,ME, MAE, MPE, RMSE, Corr, Min, Max, Minmax</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>frequency</p>
+                                                                </li>
+                                                                <li>actual_df : pandas(Dataframe)</li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>Dict of accuracy metrics</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By :Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.create_save_model">
+<span class="sig-name descname"><span class="pre">create_save_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.create_save_model" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : create_save_model function <br><b>Module</b> : model_training <br><b>Description</b> : This function creates required model for a given data ,save it to assigned location</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns : Save models and return None</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>model : type(pickel file)</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.futureForecasting">
+<span class="sig-name descname"><span class="pre">futureForecasting</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">periods</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.futureForecasting" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : futureForecasting function <br><b>Module</b> : model_training <br><b>Description</b> : This function does the forecasting of given model for a required period of time</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>periods,freq</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>future_df : type(dataframe)</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.load_model">
+<span class="sig-name descname"><span class="pre">load_model</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.load_model" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : create_save_model function <br><b>Module</b> : model_training <br><b>Description</b> : This function load the model from the production folder for current date.</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns :</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>model : type(pickel) file</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By :Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.plot_predictions">
+<span class="sig-name descname"><span class="pre">plot_predictions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">forecast</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">var</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.plot_predictions" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : plot_predictions function <br><b>Module</b> : model_training <br><b>Description</b> : This function plots the forecasted data Vs raw data graph.</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : pandas Dataframe</p>
+                                                                </li>
+                                                                <li>
+                                                                    forecast ,var
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns : Plots of Forecast Data v/s Raw Data</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>sensor_name_fig.jpeg : type(graphJSON)</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            <dl class="py method">
+                                                <dt class="sig sig-object py" id="model_training.train.ModelTraining.reformat">
+<span class="sig-name descname"><span class="pre">reformat</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#model_training.train.ModelTraining.reformat" title="Permalink to this definition">¶</a></dt>
+                                                <dd>
+                                                    <p><b>Name</b> : reformat function <br><b>Module</b> : model_training <br><b>Description</b> : This function changes the columns names as per model requirement for a given dataframe</p>
+                                                    <dl class="simple">
+                                                        <dt>Parameters:</dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>None</p>
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                        <dt>Returns : </dt>
+                                                        <dd>
+                                                            <ul class="simple">
+                                                                <li>
+                                                                    <p>df : type(pandas dataframe</p>
+                                                                </li>
+                                                                <li>
+                                                                    on failure : Raise Exceptions
+                                                                </li>
+                                                            </ul>
+                                                        </dd>
+                                                    </dl>
+                                                    <p>Written By : Jai Singh <br>Version : 1.0.0 <br>Revision : None</p>
+                                                </dd>
+                                            </dl>
+
+                                            </dd>
+                                    </dl>
+
+                                </div>
+                                <div class="section" id="module-model_training">
+                                    <span id="module-contents"></span>
+                                    <h2>Module contents<a class="headerlink" href="#module-model_training" title="Permalink to this headline">¶</a></h2>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <footer>
+                        <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+                            <a href="main.html" class="btn btn-neutral float-left" title="main module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+                        </div>
+
+                        <hr/>
+
+                        <div role="contentinfo">
+                            <p>
+                                &#169; Copyright 2021, Ineuron.
+
+                            </p>
+                        </div>
+
+
+
+                        Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+
+                        <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+
+                    </footer>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <script type="text/javascript">
+        jQuery(function() {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>
